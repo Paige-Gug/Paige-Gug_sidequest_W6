@@ -67,7 +67,7 @@ let audioUnlocked = false;
 function unlockAudioOnce() {
   if (audioUnlocked) return;
   audioUnlocked = true;
-  if (typeof userStartAudio === "function") userStartAudio();
+  soundManager?.unlock();
 }
 
 // Prevent the browser from stealing keys (space/arrows) for scrolling.
@@ -132,6 +132,13 @@ async function boot() {
   // --- Audio registry ---
   // (AudioContext may still be locked until the user clicks/presses a key.)
   soundManager = new SoundManager();
+
+  // Load sound effects for input actions
+  soundManager.load("jump", "./assets/sfx/jump.mp3");
+  soundManager.load("attack", "./assets/sfx/attack.mp3");
+  soundManager.load("leaf", "./assets/sfx/collect.mp3");
+  soundManager.load("hurt", "./assets/sfx/damage.mp3");
+  soundManager.load("music", "./assets/sfx/music.mp3");
 
   // --- Parallax layer defs (VIEW) ---
   const defs = levelPkg.level?.view?.parallax ?? [];
@@ -297,14 +304,24 @@ function draw() {
 
 // ------------------------------------------------------------
 // Optional input callbacks (audio unlock feels invisible)
-// ------------------------------------------------------------
+// Also play sounds for input actions
 
 function mousePressed() {
   unlockAudioOnce();
+  soundManager?.play("attack");
 }
 
 function keyPressed(evt) {
   unlockAudioOnce();
+
+  // Play sounds based on key pressed
+  const key = (evt?.key ?? "").toLowerCase();
+  if (key === "w" || key === "arrowup") {
+    soundManager?.play("jump");
+  } else if (key === " ") {
+    soundManager?.play("attack");
+  }
+
   return preventKeysThatScroll(evt);
 }
 

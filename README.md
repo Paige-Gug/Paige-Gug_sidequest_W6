@@ -1,15 +1,10 @@
 ## Project Title
 
-Bread and Balance - A2_Group3A_MidtermGame
+Side Quest Week 6
 
-## Authors
+## Author
 
-- - Paige Gugeler
-- Annika Zamora
-- Brianna Zampini
-- Paige Van Overberghe
-- Andrea Sobiesiak
-- Tristan Whalen
+Paige Gugeler
 
 ## Description
 
@@ -23,16 +18,25 @@ The game currently has one level as this is the first phase and testing experien
 
 Users will notice the homescreen indicates they have the opportunity to view pantry, workbench, and oven functionality. These buttons will highlight to indicate the mouse has hovered over and buttons can be clicked to take you to your respective choice.
 
-An energy level on the left side on the game screen, as the numerical value decreases the drag and drop options become relatively slower. Below that, the player with the options to click the “Home” button transitions back to the homescreen and beside that is the “End Day” button once the player's energy is reduced. On the top right side, the bread count and recipe are shown. These remain throughout each page.
-
 ## Assets
 
-N/A Brianna Zampini and Paige Van Overberghe are creating game graphics themselves (in Photoshop and InDesign)
+Sprites made by: CraftPix.Net https://craftpix.net/freebies/free-top-down-hunt-animals-pixel-sprite-pack/
+
+Tile set made by: CraftPix.Net https://craftpix.net/freebies/free-platformer-game-tileset-pixel-art/
+
+Sound effects:
+
+- Jump: Sound Effect by <a href="https://pixabay.com/users/dragon-studio-38165424/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=463196">DRAGON-STUDIO</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=463196">Pixabay</a>
+- Attack: Sound Effect by <a href="https://pixabay.com/users/universfield-28281460/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=352040">Universfield</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=352040">Pixabay</a>
+- Damage: Sound Effect by <a href="https://pixabay.com/users/freesound_community-46691455/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=96346">freesound_community</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=96346">Pixabay</a>
+- Collecting: Sound Effect by <a href="https://pixabay.com/users/mrstokes302-48032194/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=423629">Neo Theone</a> from <a href="https://pixabay.com/sound-effects//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=423629">Pixabay</a>
+
+Music: <a href="https://pixabay.com/users/desifreemusic-28163210/?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=310147">Omar Faruque</a> from <a href="https://pixabay.com//?utm_source=link-attribution&utm_medium=referral&utm_campaign=music&utm_content=310147">Pixabay</a>
 
 ---
 
 ## GenAI
 
-The code was written by Paige Gugeler, Tristan Whalen, Annika Zamora and Andrea Sobiesiak but they used GenAI to help refine complex code and create comments.
+No GenAI was used for this project.
 
 ---
