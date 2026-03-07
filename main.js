@@ -97,7 +97,6 @@ let cameraController; // VIEW: follow + clamp camera to world bounds
 let inputManager; // SYSTEM: keyboard snapshot
 let soundManager; // SYSTEM: audio registry
 let debugOverlay; // VIEW/SYSTEM: debug UI
-
 let winScreen;
 let loseScreen;
 let parallaxLayers = []; // Preloaded parallax layer defs [{ img, factor }, ...]
@@ -320,6 +319,11 @@ function keyPressed(evt) {
     soundManager?.play("jump");
   } else if (key === " ") {
     soundManager?.play("attack");
+  }
+
+  // Play music on loop if not already playing
+  if (!soundManager?.isPlaying("music")) {
+    soundManager?.loop("music");
   }
 
   return preventKeysThatScroll(evt);
